@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
 	return (
 		<div className="footer">
-			<p>© 2020 Blog.futbol</p>
+			<p>&copy; artifact.com 2019</p>
 		</div>
 	);
 };
