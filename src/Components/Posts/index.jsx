@@ -1,5 +1,5 @@
 import React from 'react';
-import './Posts.css';
+import './posts.css';
 import Card from '../Card';
 import mockData from '../../constants/__mockData__/mockData.json';
 

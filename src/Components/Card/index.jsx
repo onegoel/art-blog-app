@@ -1,13 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import './Card.css';
-import clapping from '../../assets/icons/clapping.svg'; 
-import heartBlack from '../../assets/icons/heart-black.svg'; 
-import heartRed from '../../assets/icons/heart-red.svg'; 
-import reason from '../../assets/images/reason.png'; 
+import './card.css';
+import { clapping, heartBlack, heartRed } from '../../assets/icons';
 import propTypes from 'prop-types'; 
 import IconButton from '../IconButton';
-import loadIcons from '../../assets/icons';
 
 const Card = ({
 	date,
@@ -20,11 +16,11 @@ const Card = ({
 }) => {
 	const [isLiked, setIsLiked] = useState(liked);
 	const [clapCount, setClapCount] = useState(claps);
-	const cardImgSrc = ('../../Assets/images/' + image);
+	const cardImgSrc = require('../../assets/images/' + image); // eslint-disable-line
 	const heartIcon = isLiked ? heartRed : heartBlack;
 	return (
 		<div className="card">
-			<img src={cardImgSrc} alt={cardImgSrc} />
+			<img className="card-img-top" src={cardImgSrc} alt={cardImgSrc} />
 			<p className='card-meta-info'>
 				<span>{date}</span>
 				<span>{readingTime}</span>
@@ -33,6 +29,7 @@ const Card = ({
 				<h4 className='card-title'>{title}</h4>
 				<p className='card-text'>{description}</p>
 			</div>
+			{/* <hr className='ruler'></hr> */}
 			<div className='card-footer'>
 				<div className='claps'>
 					<IconButton 

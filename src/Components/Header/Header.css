@@ -13,16 +13,19 @@
     align-items: flex-start;
     flex-grow: 1;
     padding: 2rem;
-    padding-left: 20rem;
+    padding-left: 10rem;
 }
 
 .blog-name h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin: 0;
 }
 
 .blog-name p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
     margin: 0;
 }
 
@@ -40,7 +43,7 @@
     border: none;
     padding: 10px;
     margin: 0 10px;
-    font-size: 2rem;
+    font-size: 1rem;
     cursor: pointer;
     flex-grow: 1;
 }

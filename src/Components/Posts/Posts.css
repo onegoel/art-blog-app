@@ -1,18 +1,8 @@
-/* .cards-wrapper {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-} */
-
 .cards-wrapper {
-    padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3em;
+    gap: 2rem;
     align-self: center;
+    padding: 1rem;
 }
   
