@@ -30,6 +30,7 @@ const Card = ({
 				<p className='card-text'>{description}</p>
 			</div>
 			{/* <hr className='ruler'></hr> */}
+			<div className='ruler'></div>
 			<div className='card-footer'>
 				<div className='claps'>
 					<IconButton 
